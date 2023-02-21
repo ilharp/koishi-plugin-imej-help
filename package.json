@@ -20,15 +20,18 @@
   "devDependencies": {
     "atsc": "^1.2.2",
     "koishi": "^4.11.0",
+    "koishi-plugin-imej": "^0.1.0",
     "typescript": "^4.9.4"
   },
   "peerDependencies": {
-    "koishi": "^4.11.7"
+    "koishi": "^4.11.7",
+    "koishi-plugin-imej": "^0.1.0"
   },
   "koishi": {
     "service": {
       "required": [
-        "puppeteer"
+        "puppeteer",
+        "imej"
       ]
     }
   }
