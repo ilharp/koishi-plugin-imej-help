@@ -1,0 +1,145 @@
+body {
+  min-width: 600px;
+  background-color: #f0f0f0;
+}
+
+.imej-help-header-container {
+  margin: 0 24px;
+
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+}
+
+.imej-help-header-title {
+  color: hsl(205, 100%, 45%);
+  text-shadow: 0 0 8px hsl(205, 100%, 85%);
+}
+
+.imej-help-header-title-text {
+  font-size: 42px;
+  font-weight: bold;
+  line-height: 100%;
+}
+
+.imej-help-header-info {
+  color: hsl(300, 100%, 50%);
+
+  font-size: 24px;
+
+  display: flex;
+  align-items: center;
+}
+
+.imej-help-header-info * {
+  font-weight: bold;
+}
+
+.imej-help-header-count {
+  border-radius: 8px;
+  border-color: hsl(300, 100%, 50%);
+  border-style: solid;
+  border-width: 4px 4px 4px 4px;
+  box-shadow: 0 0 6px hsl(300, 100%, 50%);
+
+  background-color: hsl(300, 100%, 50%);
+
+  color: white;
+
+  display: flex;
+  align-items: center;
+
+  margin: 0 8px;
+}
+
+.imej-help-header-count-top {
+  border-radius: 4px;
+  border-color: white;
+  border-style: solid;
+  border-width: 4px 4px 4px 4px;
+
+  background-color: white;
+
+  color: hsl(300, 100%, 50%);
+
+  margin: 0 8px 0 0;
+}
+
+.imej-help-header-count-total {
+  margin: 0 8px 0 0;
+}
+
+.imej-help-body-container {
+  padding: 36px 0;
+}
+
+.imej-help-command-container {
+  border-radius: 8px;
+  border-color: hsl(var(--imej-help-command-color), 100%, 45%);
+  border-style: solid;
+  border-width: 4px 4px 4px 4px;
+
+  box-shadow: 0 0 130px hsl(var(--imej-help-command-color), 100%, 80%),
+    0 4px 6px hsl(var(--imej-help-command-color), 100%, 55%);
+
+  margin: 24px 24px;
+}
+
+.imej-help-command-header {
+  background-color: hsl(var(--imej-help-command-color), 100%, 45%);
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.imej-help-command-header-content {
+  margin: 6px 12px;
+  font-weight: bolder;
+  color: white;
+  text-shadow: 0 0 48px white;
+}
+
+.imej-help-command-header-title {
+  font-size: 30px;
+}
+
+.imej-help-command-body {
+  padding: 0 12px;
+}
+
+.imej-help-command-description {
+  font-size: 18px;
+  font-weight: bold;
+  color: hsl(var(--imej-help-command-color), 100%, 20%);
+  margin: 12px 0;
+}
+
+.imej-help-command-children {
+  color: hsl(var(--imej-help-command-color), 100%, 20%);
+  margin: 12px 0;
+}
+
+.imej-help-command-children-text {
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+.imej-blank-footer-container {
+  background-color: hsl(205, 100%, 40%);
+
+  padding: 24px 0;
+}
+
+.imej-blank-footer-poweredby-text {
+  margin: 0 24px;
+
+  font-size: 18px;
+
+  color: white;
+}
+
+.imej-blank-footer-poweredby-text * {
+  font-weight: 600;
+  text-shadow: 0 0 36px white;
+}

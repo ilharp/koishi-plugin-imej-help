@@ -1,0 +1,38 @@
+<div class="imej-help-body-container">
+  {{#each slots.commands}}
+    <div
+      class="imej-help-command-container"
+      style="--imej-help-command-color: {{{this.color}}}"
+    >
+      <div class="imej-help-command-header">
+        <div
+          class="imej-help-command-header-content imej-help-command-header-title"
+        >
+          {{this.name}}
+        </div>
+      </div>
+      <div class="imej-help-command-body">
+        {{#if this.description}}
+          <div class="imej-help-command-description">
+            {{this.description}}
+          </div>
+        {{/if}}
+        <div class="imej-help-command-children">
+          <p class="imej-help-command-children-text">
+            可用的子指令：
+          </p>
+          {{#each this.children}}
+            <p class="imej-help-command-children-text">
+              -
+              {{this}}
+            </p>
+          {{else}}
+            <p class="imej-help-command-children-text">
+              该指令没有子指令。
+            </p>
+          {{/each}}
+        </div>
+      </div>
+    </div>
+  {{/each}}
+</div>
